@@ -1,0 +1,53 @@
+:root{
+  --color-background: #fbf6f0;
+  --color-background-dark: #9e3d1c;
+  --color-background-card: #fcfbf7;
+  --color-background-card-black: linear-gradient(45deg,rgba(161, 61, 28, 1) 0%, rgba(219, 121, 57, 1) 100%);
+  --color-yellow: #f4d98a;
+  --color-blue: #556bc0;
+  --color-blue: #bf4c73;
+  --color-brown: #544b44;
+}
+
+/* 1. Declarar la fuente Regular (Peso 400) */
+@font-face {
+  font-family: 'DM Mono';
+  src: url('../assets/fonts/dm-mono/DMMono-Regular.ttf') format('truetype');
+  font-weight: 400; /* Peso para Regular */
+  font-style: normal;
+}
+
+/* 2. Declarar la fuente Medium (Peso 500) */
+@font-face {
+  font-family: 'DM Mono'; /* Mismo nombre exacto */
+  src: url('../assets/fonts/dm-mono/DMMono-Medium.ttf') format('truetype');
+  font-weight: 500; /* Peso para Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans'; /* Mismo nombre exacto */
+  src: url('../assets/fonts/dm-sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 500; /* Peso para Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fruanes'; /* Mismo nombre exacto */
+  src: url('../assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  font-weight: 500; /* Peso para Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fruanes'; /* Mismo nombre exacto */
+  src: url('../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');
+  font-weight: 500; /* Peso para Medium */
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}

@@ -1,0 +1,124 @@
+aside {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-background);
+  font-size: 16px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.logo__area {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__area button {
+  background: none;
+  border: none;
+}
+
+.navigation {
+  flex-grow: 1;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.navigation ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.navigation ul li:hover{
+  background: var(--color-background-card);
+  border-radius: 1em;
+}
+
+.navigation ul li .item {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+}
+
+.navigation ul li .item img{
+  width: 1em;
+  aspect-ratio: 1/1;
+}
+
+.navigation li span {
+  width: 1.2em;
+  height: 1.2em;
+  aspect-ratio: 1/1;
+  border-radius: 1em;
+  text-align: center;
+  background-color: var(--color-background-dark);
+  color: var(--color-background);
+}
+
+aside .weather__card {
+  background: var(--color-yellow);
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+}
+
+aside .weather__card__sun {
+  position: absolute;
+  right: -1em;
+  top: -2em;
+}
+
+aside .weather__card__content {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  z-index: 1;
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  color: black;
+}
+
+aside .weather__card__content p:first-child {
+  text-transform: uppercase;
+}
+
+aside hr {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+aside .weather__card + hr {
+  border-top: dashed 1px;
+}
+
+aside p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: var(--color-brown);
+}
+
+aside .weather__card__content h3 {
+  font-family: 'Fruanes', fantasy;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-brown);
+}
+
+aside .Footer {
+  text-transform: uppercase;
+  font-family: 'DM Mono', monospace;
+  font-size: .8rem;
+  line-height: 2em;
+  word-spacing: 1em;
+}

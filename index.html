@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/aside.css">
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
@@ -18,24 +21,71 @@
 
   <!-- Sidebar starts -->
 
-  Maison Soleil
+  <aside>
 
-  <!-- Guest navigation -->
-  Your stay
-  1
-  The house
-  Around town
-  Breakfast
-  Messages
+    <div class="logo__area">
+      <img src="/assets/images/logo.svg" alt="Logo">
+      <button>
+        <img src="/assets/images/icon-close.svg" alt="close">
+      </button>
+    </div>
+    <hr/>
+    <!-- Guest navigation -->
+    <div class="navigation">
+      <ul>
+        <li>
+          <div class="item">
+            <img src="/assets/images/icon-bed.svg" alt="Bed">
+            <p>Your stay</p>
+          </div>
+          <span>1</span>
+        </li>
+        <li>
+          <div class="item">
+            <img src="/assets/images/icon-house.svg" alt="House">
+            <p>The house</p>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <img src="/assets/images/icon-pin.svg" alt="Bed">
+            <p>Around town</p>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <img src="/assets/images/icon-breakfast-outline.svg" alt="Breakfast-outline">
+            <p>Breakfast</p>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <img src="/assets/images/icon-mail.svg" alt="Mail">
+            <p>Messages</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Local weather -->
+    <div class="weather__card">
+      <div class="weather__card__content">
+        <p>Today in Cassis</p>
+        <h3>27°</h3>
+        <p>Sunny · light breeze</p>
+      </div>
+      <figcaption class="weather__card__sun">
+        <img src="assets/images/icon-weather.svg" alt="Weather">
+      </figcaption>
+    </div>
 
-  <!-- Local weather -->
-  Today in Cassis
-  27°
-  Sunny · light breeze
+    <hr>
 
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
+    <div class="Footer">
+      <p>Est. 1987</p>
+      <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+      <p>© 2026 Maison Soleil</p>
+    </div>
+  </aside>
 
   <!-- Sidebar ends -->
 
