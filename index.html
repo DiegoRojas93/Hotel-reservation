@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/aside.css">
+  <link rel="stylesheet" href="CSS/main.css">
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
@@ -91,85 +92,183 @@
 
   <!-- Main content starts -->
 
-  Booking · Confirmed
-  Bienvenue, Lucia.
+  <main>
 
-  Print receipt
-  Add to calendar
+    <div class="logo__area">
+      <img src="/assets/images/logo.svg" alt="Logo">
+      <button>
+        <img src="/assets/images/icon-close.svg" alt="close">
+      </button>
+    </div>
 
-  <!-- Booking cards start -->
+    <hr/>
 
-  <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
+    <small>Booking · Confirmed</small>
+    <div class="title">
+      <h1><span>Bienvenue,</span> Lucia.</h1>
+    </div>
+    <div class="Buttons">
+      <button>Print receipt</button>
+      <button>Add to calendar</button>
+    </div>
 
-  Your stay
+    <!-- Booking cards start -->
 
-  Check in
-  25 Apr
-  Saturday · 15:00
+    <!-- Cards -->
 
-  Check out
-  29 Apr
-  Wednesday · 11:00
+    <section class="hero__cards">
 
-  Room · La Garrigue · 4 nights
-  € 620.00
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
+      <!-- Receipt card -->
 
-  Total paid
-  € 730.40
+      <article class="cards receipt__card">
+  
+        <div class="heading__main">
+          <div class="first">
+            <p>Receipt</p>
+            <div class="">
+              <p>№ MS-2026</p>
+              <p>0421-AH</p>
+            </div>
+          </div>
+          <div class="second">
+            <h3>Your stay</h3>
+          </div>
+        </div>
+        <hr>
+        <div class="info">
+          <div class="side left">
+            <p>Check in</p>
+            <h1>25 Apr</h1>
+            <p>Saturday · 15:00</p>
+          </div>
+          <div class="side right">
+            <p>Check out</p>
+            <h1>29 Apr</h1>
+            <p>Wednesday · 11:00</p>
+          </div>
+        </div>
+        <hr>
+        <div class="items">
+          <div class="item">
+            <p>Room · La Garrigue · 4 nights</p>
+            <span>€ 620.00</span>
+          </div>
+          <div class="item">
+            <p>Breakfast · 2 guests</p>
+            <span>€ 96.00</span>
+          </div>
+          <div class="item">
+            <p>Tourist tax</p>
+            <span>€ 14.40</span>
+          </div>
+        </div>
+        <hr>
+        <div class="total">
+          <p>Total paid</p>
+          <h1>€ 730.40</h1>
+        </div>
+        <div class="barcode__info">
+          <p>Paid · Wise · GBP</p>
+          <img src="/assets/images/icon-barcode.svg" alt="Barcode">
+        </div>
+      </article>
 
-  Paid · Wise · GBP
-  <!-- Barcode image -->
+      <img class="illustration-sun" src="/assets/images/illustration-sun.svg" alt="illustration-sun" />
+  
+      <!-- Note from host card -->
+  
+      <article class="cards host__card">
+        <hr>
+        <div class="heading__host__card">
+          <p>Welcome</p>
+          <img src="/assets/images/icon-sun.svg" alt="icon-sun">
+        </div>
+        <div class="content__main">
+          <h1><span>A note from your host,</span> Margaux.</h1>
+          <p>We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
+      Room</p>
+        </div>
+        <div class="footer">
+          <small>Room</small>
+          <h3>La Garrigue</h3>
+        </div>
+      </article>
+    </section>
+    
 
-  <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
-  We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-  Room
-  La Garrigue
+    <!-- Booking cards end -->
 
-  <!-- Booking cards end -->
+    <!-- Guest info row starts -->
 
-  <!-- Guest info row starts -->
+    <section class="booking__cards">
+      <!-- Arrival -->
+      <div class="card arrival">
+        <div class="heading">
+          <div>
+            <div class="icon">
+              <img src="assets/images/icon-key.svg" alt="icon-key">
+            </div>
+            <h3>Arrival</h3>
+          </div>
+          <h2>01</h2>
+        </div>
+        <h2>Check-in from 15:00</h2>
+        <small>Sat, 25 April</small>
+        <p>Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+      </div>
 
-  <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+      <!-- Wifi -->
+      <div class="card wifi">
+        <div class="heading">
+          <div>
+            <div class="icon">
+              <img src="assets/images/icon-wifi.svg" alt="icon-wifi">
+            </div>
+            <h3>Wifi</h3>
+          </div>
+          <h2>02</h2>
+        </div>
+        <h2>Le Soleil · Guest</h2>
+        <small>Password below</small>
+        <div class="block">
+          <p>Network</p>
+          <p>Le Soleil · Guest</p>
+        </div>
+        <div class="block">
+          <p>Password</p>
+          <div class="content__main">
+            <p>soleil-2026</p>
+            <button>Copy</button>
+          </div>
+        </div>
+      </div>
 
-  <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
+      <!-- Breakfast -->
+      <div class="card breakfast">
+        <div class="heading">
+          <div>
+            <div class="icon">
+              <img src="assets/images/icon-breakfast.svg" alt="icon-breakfast">
+            </div>
+            <h2>Breakfast</h2>
+          </div>
+          <h3>03</h3>
+        </div>
+        <h2>Served 8 - 10:30</h2>
+        <small>On the terrace</small>
+        <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+      </div>
 
-  <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+    </section>
+    <!-- Guest info row ends -->
 
-  <!-- Guest info row ends -->
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Diego Fernando Rojas Quintero</a>.
+    </footer>
+  </main>
 
   <!-- Main content ends -->
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
 </body>
 </html>

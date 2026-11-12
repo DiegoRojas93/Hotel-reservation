@@ -1,0 +1,335 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-background);
+  font-size: 16px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+main .logo__area {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .logo__area button {
+  background: none;
+  border: none;
+}
+
+main small {
+  text-transform: uppercase;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  line-height: 2em;
+  word-spacing: 1em;
+  color: hsl(var(--color-text-black) / 0.5);
+}
+
+main .title h1 {
+  color: hsl(var(--color-background-dark));
+  font-style: italic;
+}
+
+main .title h1 span {
+  color: hsl(var(--color-text-black));
+  font-style: normal;
+}
+
+main .Buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+
+main .Buttons button {
+  font-family: 'DM Sans', monospace;
+  width: 45%;
+  border: 1px solid hsla(var(--color-background-dark));
+  border-radius: 2em;
+  padding: 1em;
+  font-size: 1rem;
+}
+
+main .Buttons button:last-child {
+  background-color: hsl(var(--color-text-black));
+  color: hsl(var(--color-background));
+}
+
+main .hero__cards {
+  display: flex;
+  flex-direction: column;
+}
+
+main .hero__cards .cards {
+  width: 100%;
+  padding: 1em;
+  display: inherit;
+  flex-direction: inherit;
+}
+
+main .hero__cards .receipt__card {
+  background: hsl(var(--color-background-card));
+  height: calc( 100vh - 10% );
+  display: flex;
+  justify-content: space-between;
+  transform: rotate(358deg);
+}
+
+main .hero__cards .cards {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1em;
+  background: white;
+  box-shadow: 0px 0px 1em -5px hsl(var(--color-text-black) / 0.5);
+}
+
+main .hero__cards .receipt__card .heading__main .first {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(var(--color-text-black) / 0.5);
+  font-family: 'DM Mono', monospace;
+  text-transform: uppercase;
+}
+
+main .hero__cards .receipt__card .heading__main .second {
+  color: hsl(var(--color-text-black));
+  font-family: 'Fruanes', fantasy;
+  text-transform: uppercase;
+}
+
+main .hero__cards .receipt__card hr {
+  margin: 1em 0;
+  border-top: dashed 1px;
+}
+
+main .hero__cards .receipt__card hr:last-of-type {
+  border-top: solid 1px;
+}
+
+main .hero__cards .receipt__card .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .hero__cards .receipt__card .info .side {
+  text-align: center;
+  color: hsl(var(--color-text-black));
+}
+
+main .hero__cards .receipt__card .info .side p:first-child {
+  color: hsl(var(--color-text-black) / 0.5);
+}
+
+main .hero__cards .receipt__card .info .side h1 {
+  font-family: 'Fruanes', fantasy;
+}
+
+main .hero__cards .receipt__card .items {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+main .hero__cards .receipt__card .items .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: hsl(var(--color-text-black));
+}
+
+main .hero__cards .receipt__card .items .item:last-child {
+  color: hsl(var(--color-brown));
+}
+
+main .hero__cards .receipt__card .total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(var(--color-text-black));
+  text-transform: uppercase;
+}
+
+main .hero__cards .receipt__card .total:last-child {
+  font-family: 'Fruanes', fantasy;
+}
+
+main .hero__cards .receipt__card .barcode__info {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .hero__cards .illustration-sun {
+  display: none;
+}
+
+main .hero__cards .host__card {
+  background: var(--color-background-card-black);
+  transform: rotate(2deg);
+  color: hsl(var(--color-background));
+}
+
+main .hero__cards .host__card hr {
+  margin: 1em 0;
+  border-top: dashed 1px;
+  color: #DB7939;
+}
+
+main .hero__cards .heading__host__card {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .hero__cards .heading__host__card p {
+  text-transform: uppercase;
+}
+
+main .hero__cards .content__main h1 {
+  font-family: 'Fruanes', fantasy;
+  font-style: italic;
+}
+
+main .hero__cards .content__main h1 span {
+  color: hsl(var(--color-yellow));
+  font-size: 1rem;
+  display: block;
+}
+
+main .hero__cards .content__main p {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+main .hero__cards .footer small {
+  text-transform: uppercase;
+  color: hsl(var(--color-background));
+}
+
+main .booking__cards {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+main .booking__cards .card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 0px 0px 1em -5px hsl(var(--color-text-black) / 0.3);
+  gap: 1em;
+}
+
+main .booking__cards .card .heading .icon {
+  width: 2em;
+  aspect-ratio: 1/1;
+  border-radius: calc( 1em / 2 );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .booking__cards .arrival .icon {
+  background-color: hsl(var(--color-background-dark));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .booking__cards .arrival .heading {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(var(--color-background-dark));
+}
+
+main .booking__cards .wifi .heading {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(var(--color-blue));
+}
+
+main .booking__cards .breakfast .heading {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(var(--color-pink));
+}
+
+main .booking__cards .card .heading div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+main .booking__cards .arrival .heading h2 {
+  font-family: 'Fruanes', fantasy;
+  text-transform: uppercase;
+}
+
+
+main .booking__cards .wifi .icon {
+  background-color: hsl(var(--color-blue));
+}
+
+main .booking__cards .wifi .block {
+  padding: .5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f2efea;
+  border-radius: .5em;
+}
+
+main .booking__cards .wifi .block > p:first-child {
+  font-family: 'DM Mono', monospace;
+  text-transform: uppercase;
+  color: hsl(var(--color-brown));
+}
+
+main .booking__cards .wifi .block .content__main {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  color: hsl(var(--color-brown));
+}
+
+main .booking__cards .wifi .block .content__main button {
+  padding: 0 .5em;
+  border: 1px solid hsl(var(--color-brown) / 0.5);
+  border-radius: .5em;
+}
+main .booking__cards .wifi .block .content__main P {
+  color: black;
+}
+
+main .booking__cards .breakfast .icon {
+  background-color: hsl(var(--color-pink));
+}
+
+main .booking__cards .card > h2 {
+  font-family: 'Fruanes', fantasy;
+  color: hsl(var(--color-text-black));
+}
+
+main .booking__cards .card > small {
+  font-family: 'DM Mono', fantasy;
+  color: hsl(var(--color-text-black));
+}
+
+main .booking__cards .card > p {
+  color: hsl(var(--color-brown));
+}
