@@ -1,0 +1,113 @@
+@media (width >= 400px) and (orientation: landscape) {
+
+  body {
+    width: 100vw;
+    display: flex;
+    position: relative;
+  }
+
+  /* Aside */
+
+  aside {
+    width: calc(100vw / 6);
+    display: inline-block;
+  }
+
+  aside .weather__card {
+    font-size: 0.8rem;
+  }
+
+  aside .weather__card .weather__card__sun img {
+    width: 5rem;
+  }
+
+  /* Main */
+
+  main {
+    width: calc( 100vw - (100vw / 6));
+    position: absolute;
+    left: calc( 100vw / 6);
+  }
+
+  main .logo__area {
+    display: none;
+  }
+
+  main .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  main .title .Buttons {
+    width: calc-size( auto, size + 50px );
+    margin: 0;
+  }
+
+  main .title .Buttons button {
+    width: auto;
+    padding: .5em;
+  }
+
+  main .hero__cards {
+    padding: 3em;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main .hero__cards .cards {
+    flex-direction: column;
+    width: 35%;
+    height: auto;
+    aspect-ratio: 1/1;
+    font-size: 14px;
+  }
+
+  main .hero__cards:hover .illustration-sun {
+    display: block;
+    opacity: 1;
+  }
+
+
+  main .hero__cards .receipt__card {
+    height: auto;
+    display: flex;
+  }
+
+  main .hero__cards .host__card {
+    background: var(--color-background-card-black);
+    color: hsl(var(--color-background));
+  }
+
+  main .hero__cards:hover .receipt__card {
+    transform: rotate(2deg);
+  }
+
+  main .hero__cards:hover .host__card {
+    transform: rotate(-2deg);
+  }
+
+  main .booking__cards {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 12px;
+  }
+
+  main .booking__cards .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 0px 0px 1em -5px hsl(var(--color-text-black) / 0.3);
+    gap: 1em;
+  }
+}
+
+@starting-style {
+
+  main .hero__cards:hover .illustration-sun {
+    opacity: 0;
+  }
+}

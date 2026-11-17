@@ -6,7 +6,6 @@ main {
   padding: 1em;
   display: flex;
   flex-direction: column;
-  z-index: 1;
 }
 
 main .logo__area {
@@ -22,7 +21,7 @@ main .logo__area button {
   border: none;
 }
 
-main small {
+main .title div small {
   text-transform: uppercase;
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
@@ -31,17 +30,17 @@ main small {
   color: hsl(var(--color-text-black) / 0.5);
 }
 
-main .title h1 {
+main .title div h1 {
   color: hsl(var(--color-background-dark));
   font-style: italic;
 }
 
-main .title h1 span {
+main .title div h1 span {
   color: hsl(var(--color-text-black));
   font-style: normal;
 }
 
-main .Buttons {
+main div .Buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,11 +67,23 @@ main .hero__cards {
   flex-direction: column;
 }
 
-main .hero__cards .cards {
+/* main .hero__cards .cards {
   width: 100%;
   padding: 1em;
   display: inherit;
   flex-direction: inherit;
+} */
+
+main .hero__cards .cards {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: inherit;
+  justify-content: space-between;
+  border-radius: 1em;
+  background: white;
+  box-shadow: 0px 0px 1em -5px hsl(var(--color-text-black) / 0.5);
+  transition: transform 300ms ease-out, display 300ms allow-discrete;
 }
 
 main .hero__cards .receipt__card {
@@ -80,15 +91,7 @@ main .hero__cards .receipt__card {
   height: calc( 100vh - 10% );
   display: flex;
   justify-content: space-between;
-  transform: rotate(358deg);
-}
-
-main .hero__cards .cards {
-  display: flex;
-  justify-content: space-between;
-  border-radius: 1em;
-  background: white;
-  box-shadow: 0px 0px 1em -5px hsl(var(--color-text-black) / 0.5);
+  transform: rotate(-2deg);
 }
 
 main .hero__cards .receipt__card .heading__main .first {
@@ -174,6 +177,10 @@ main .hero__cards .receipt__card .barcode__info {
 
 main .hero__cards .illustration-sun {
   display: none;
+  opacity: 0;
+  width: calc(100% - 85%);
+
+  transition: opacity 300ms ease-out, display 250ms allow-discrete;
 }
 
 main .hero__cards .host__card {

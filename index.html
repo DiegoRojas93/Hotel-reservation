@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="stylesheet" href="CSS/aside.css">
   <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
@@ -22,11 +23,11 @@
 
   <!-- Sidebar starts -->
 
-  <aside>
+  <aside id="barra-lateral">
 
     <div class="logo__area">
       <img src="/assets/images/logo.svg" alt="Logo">
-      <button>
+      <button id="btn-menu__barra">
         <img src="/assets/images/icon-close.svg" alt="close">
       </button>
     </div>
@@ -96,20 +97,22 @@
 
     <div class="logo__area">
       <img src="/assets/images/logo.svg" alt="Logo">
-      <button>
+      <button id="btn-menu">
         <img src="/assets/images/icon-close.svg" alt="close">
       </button>
     </div>
 
     <hr/>
 
-    <small>Booking · Confirmed</small>
     <div class="title">
-      <h1><span>Bienvenue,</span> Lucia.</h1>
-    </div>
-    <div class="Buttons">
-      <button>Print receipt</button>
-      <button>Add to calendar</button>
+      <div>
+        <small>Booking · Confirmed</small>
+        <h1><span>Bienvenue,</span> Lucia.</h1>
+      </div>
+      <div class="Buttons">
+        <button>Print receipt</button>
+        <button>Add to calendar</button>
+      </div>
     </div>
 
     <!-- Booking cards start -->
@@ -269,6 +272,8 @@
   </main>
 
   <!-- Main content ends -->
+
+  <script src="index.js"></script>
 
 </body>
 </html>
